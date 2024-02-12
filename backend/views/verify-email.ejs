@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 5% 10%;
+            background-color: #f5f5f5;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #7046b4;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7046b4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #3a1641;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hi <%= name %>,</h1>
+        <p>Your account has been successfully created!</p>
+        <p>To ensure the security of your account, please click the button below to verify your email:</p>
+        <a href="<%= resetURL %>" class="btn">Verify Email</a>
+        <p>If you didn't create an account or have any concerns, you can safely ignore this email.</p>
+        <p>Thank you!</p>
+    </div>
+</body>
+
+</html>

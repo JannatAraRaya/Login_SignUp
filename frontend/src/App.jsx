@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
- <div className='text-white flex justify-center items-center bg-cover h-[100vh]' style = {{"backgroundImage":"url('../src/assets/background.jpg')"}}>
+ <div className='text-white flex justify-center items-center bg-cover h-[100vh] bg-center' style = {{"backgroundImage":"url('../src/assets/background.jpg')"}}>
 <Routes>
   <Route path='login' element={<Login/>}></Route>
   <Route path='sign-up' element={<SignUp/>}></Route>
